@@ -4,13 +4,17 @@ import s from './App.module.css';
 
 import Modal from '../Modal/Modal';
 
+import Form from '../Form/Form';
+
 function App() {
   const [modalActive, setModalActive] = useState(false);
 
   return (
     <Container>
       <div className={s.app}>
-        <Modal active={modalActive} setActive={setModalActive}></Modal>
+        <Modal active={modalActive} setActive={setModalActive}>
+          <Form />
+        </Modal>
         <main>
           <button
             type="button"
