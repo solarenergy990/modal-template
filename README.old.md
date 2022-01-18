@@ -1,2 +1,0 @@
-# modal-template
-modal-template
