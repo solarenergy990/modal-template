@@ -7,11 +7,13 @@ import Modal from '../Modal/Modal';
 import Form from '../Form/Form';
 
 function App() {
+  // sets state of modal
   const [modalActive, setModalActive] = useState(false);
 
   return (
     <Container>
       <div className={s.app}>
+        {/* giving Modal component current state & function for setting a new state with props */}
         <Modal active={modalActive} setActive={setModalActive}>
           <Form />
         </Modal>
